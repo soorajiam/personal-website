@@ -272,7 +272,7 @@
                     </div>
                     <div class="w-full"><a
                         class="inline-flex justify-center items-center text-center h-16 p-5 font-semibold tracking-tight text-xl hover:text-white focus:text-white bg-white hover:bg-neutral-900 focus:bg-neutral-900 border border-neutral-900 rounded-lg focus:ring-4 focus:ring-neutral-400 transition duration-200 text-gray-900"
-                        href="https://helpmeexplain.com">More</a></div>
+                        href="https://www.helpmeexplain.com/">More</a></div>
                   </div>
                 </div>
               </div>
