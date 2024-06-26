@@ -9,9 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "devDependencies": {
-    "@nuxt/devtools": "latest",
+  "dependencies": {
     "@nuxt/ui": "^2.17.0",
-    "nuxt": "^3.12.1"
+    "nuxt": "^3.12.2"
   }
 }
