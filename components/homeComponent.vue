@@ -426,36 +426,50 @@
 
 <script lang="ts" setup>
 
+const names = ["Sooraj P R", "Engineer", "Product Guy", "Strategist", "Artist"];
 const name = ref('Sooraj P R');
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-const onHoverLetterChange = () => {
+const getRandomName = (excludeName) => {
+  let filteredNames = names.filter(n => n !== excludeName);
+  return filteredNames[Math.floor(Math.random() * filteredNames.length)];
+};
 
+const onHoverLetterChange = () => {
   console.log('hovered');
 
-
+  let currentName = name.value;
+  let targetName = getRandomName(currentName);
   let iterations = 0;
-  
+  let maxIterations = Math.max(currentName.length, targetName.length); // Ensure we cover the longest name length
+
   const interval = setInterval(() => {
-    name.value = name.value.split("")
-    .map((letter, index) => {
-      if(index < iterations){
-      return name.value[index]
+    if (iterations > maxIterations) {
+      clearInterval(interval);
+      name.value = targetName; // Set the final name explicitly to correct any misalignment
+      setTimeout(() => onHoverLetterChange(), 3000); // Wait 3 seconds before starting over
+      return;
     }
-    return letters[Math.floor(Math.random() * 26)]
-  })
-    .join("");
-      if(iterations >= name.value.length){ clearInterval(interval)};
-      iterations += 1/3;
-    }
-    , 9)
 
-    // return 
-    // ClearInterval(interval);
-    name.value = 'Sooraj P R';
+    name.value = targetName
+      .split('')
+      .map((letter, index) => {
+        if (index < iterations) {
+          return targetName.charAt(index);
+        } else if (index < targetName.length) {
+          return letters[Math.floor(Math.random() * letters.length)];
+        }
+        return ''; // Remove extra characters if targetName is shorter
+      })
+      .join('');
 
-}
+    iterations++;
+  }, 100); // Control the speed of letter transition
+};
+
+// This function assumes that `name` is a reactive reference (e.g., from Vue or similar framework).
+
 
 import { ref, onMounted, onUnmounted } from 'vue';
 
