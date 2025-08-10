@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
-  compatibilityDate: '2025-08-10',
+  // Lock compatibility date to a stable baseline supported by the current Nuxt release
+  compatibilityDate: '2024-12-01',
   modules: ["@nuxt/ui", "@nuxt/content"],
   content: {
     documentDriven: true,
@@ -30,7 +31,9 @@ export default defineNuxtConfig({
   ],
   nitro: {
     prerender: {
-      routes: ['/blog', '/blog/custom-components-guide', '/blog/component-test', '/blog/building-with-nuxt', '/blog/the-total-eclipse-of-you']
+      // Only prerender the blog index; individual posts may be drafts (published: false)
+      routes: ['/blog'],
+      failOnError: false
     }
   }
 })
