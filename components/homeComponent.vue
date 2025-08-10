@@ -248,19 +248,19 @@
               <span class="bg-blue-50 text-neutral-700 rounded-lg px-4 mt-1 inline-block">Timeline</span>
             </h1>
           </div>
-          <div class="mb-20">
+            <div class="mb-20">
             <div class="relative">
               <!-- Timeline line -->
-              <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-300 h-full"></div>
+              <div class="absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-0.5 md:w-1 bg-gray-300 h-full"></div>
               
               <!-- Timeline items -->
               <div class="space-y-12">
              
 
                 <!-- Current Role -->
-                <div class="relative flex items-center justify-end">
-                  <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-600 rounded-full border-4 border-white shadow-lg"></div>
-                  <div class="w-5/12 pl-8">
+                <div class="relative md:flex md:items-center md:justify-end">
+                  <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 -translate-x-0 w-4 h-4 md:w-6 md:h-6 bg-purple-600 rounded-full border-4 border-white shadow-lg"></div>
+                  <div class="w-full md:w-5/12 pl-12 md:pl-8">
                     <div class="bg-white rounded-3xl p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                       <h4 class="text-2xl font-semibold text-gray-900 mb-2">Software Engineer</h4>
                       <p class="text-lg text-purple-600 font-medium">OBSO AUTOMATION</p>
@@ -278,14 +278,14 @@
                 </div>
 
                    <!-- Education -->
-                   <div class="relative flex items-center">
-                  <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
-                  <div class="w-5/12 pr-8 text-right">
+                   <div class="relative md:flex md:items-center">
+                  <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 -translate-x-0 w-4 h-4 md:w-6 md:h-6 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
+                  <div class="w-full md:w-5/12 pl-12 md:pl-0 md:pr-8 md:text-right">
                     <div class="bg-white rounded-3xl p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                       <h4 class="text-2xl font-semibold text-gray-900 mb-2">Advanced Computer Science</h4>
                       <p class="text-lg text-blue-600 font-medium">MSc - Keele University</p>
                       <p class="text-neutral-600">Best Academic Performance 2022; Distinction</p>
-                      <div class="mt-4 flex flex-wrap gap-2 justify-end">
+                      <div class="mt-4 flex flex-wrap gap-2 md:justify-end">
                         <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">System Design</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Algorithms</span>
                         <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Graph Theory and Networks</span>
@@ -299,14 +299,14 @@
                 </div>
 
                 <!-- Previous Role -->
-                <div class="relative flex items-center justify-end">
-                  <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-orange-600 rounded-full border-4 border-white shadow-lg"></div>
-                  <div class="w-5/12 pr-8 ">
+                <div class="relative md:flex md:items-center md:justify-end">
+                  <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 -translate-x-0 w-4 h-4 md:w-6 md:h-6 bg-orange-600 rounded-full border-4 border-white shadow-lg"></div>
+                  <div class="w-full md:w-5/12 pl-12 md:pl-0 md:pr-8">
                     <div class="bg-white rounded-3xl p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                       <h4 class="text-2xl font-semibold text-gray-900 mb-2">Backend Engineer</h4>
                       <p class="text-lg text-orange-600 font-medium">CIED TECHNOLOGIES</p>
                       <p class="text-neutral-600">Kerala, India | June 2018 - June 2021</p>
-                      <div class="mt-4 flex flex-wrap gap-2 justify-end">
+                      <div class="mt-4 flex flex-wrap gap-2 md:justify-end">
                         <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Django</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">PostgreSQL</span>
                         <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">AWS</span>
@@ -315,14 +315,14 @@
                   </div>
                 </div>
                         <!-- Education -->
-                        <div class="relative flex items-center">
-                  <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
-                  <div class="w-5/12 pr-8 text-right">
+                        <div class="relative md:flex md:items-center">
+                  <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 -translate-x-0 w-4 h-4 md:w-6 md:h-6 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
+                  <div class="w-full md:w-5/12 pl-12 md:pl-0 md:pr-8 md:text-right">
                     <div class="bg-white rounded-3xl p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                       <h4 class="text-2xl font-semibold text-gray-900 mb-2">Computer Science and Engineering</h4>
                       <p class="text-lg text-blue-600 font-medium">B.Tech - Cochin University of Science and Technology</p>
                       <p class="text-neutral-600"></p>
-                      <div class="mt-4 flex flex-wrap gap-2 justify-end">
+                      <div class="mt-4 flex flex-wrap gap-2 md:justify-end">
                         <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Data Structures</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">OOP</span>
                         <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Database Systems</span>
