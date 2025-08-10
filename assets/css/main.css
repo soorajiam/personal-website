@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Ensure prose has proper max-width behavior */
+  .prose {
+    @apply max-w-none;
+  }
+  
+  /* Dark mode support for code highlighting - necessary for Shiki */
+  .dark .shiki,
+  .dark .shiki span {
+    color: var(--shiki-dark) !important;
+    background-color: var(--shiki-dark-bg) !important;
+    font-style: var(--shiki-dark-font-style) !important;
+    font-weight: var(--shiki-dark-font-weight) !important;
+    text-decoration: var(--shiki-dark-text-decoration) !important;
+  }
+  
+  /* Enhanced code block styling */
+  pre code {
+    @apply text-sm;
+  }
+  
+  /* Ensure proper contrast in dark mode */
+  .dark pre {
+    @apply bg-gray-900 text-gray-100;
+  }
+  
+  .dark pre code {
+    @apply text-gray-100;
+  }
+  
+  /* Custom scrollbar for code blocks - cannot be done with Tailwind utilities */
+  pre::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  pre::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+  
+  pre::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 dark:bg-gray-600 rounded;
+  }
+  
+  pre::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500 dark:bg-gray-500;
+  }
+}
+
+@layer components {
+  /* Ensure content components work properly within prose */
+  .prose .steps-component,
+  .prose .tabs-component,
+  .prose .card-component,
+  .prose .alert-component,
+  .prose .callout-component {
+    @apply w-full max-w-full;
+  }
+}
